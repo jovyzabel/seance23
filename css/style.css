@@ -68,6 +68,7 @@ body{
 h2{
   color: royalblue;
   text-align: center;
+  transition: .4s ease;
 }
  header{
   display: flex;
@@ -87,8 +88,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items:center ;
-  font-style: italic;
-  
+  font-style: italic;  
  }
   .hour{
     background: linear-gradient(to bottom right, royalblue, rgb(11, 35, 107));
