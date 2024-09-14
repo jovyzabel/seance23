@@ -11,10 +11,10 @@ const sec = document.querySelector('.sec');
 //   { transform: "rotate(360deg) scale(0)" },
 // ];
 
-const timing = {
-  duration: 1000,
-  iterations: Infinity,
-}
+// const timing = {
+//   duration: 1000,
+//   iterations: Infinity,
+// }
 
 console.log(boxMouse);
 

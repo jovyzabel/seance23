@@ -11,8 +11,10 @@ body{
     border-bottom: 1px rgb(11, 35, 107) solid;
     transition : 2s ease;
     border-radius: 50px;
-   margin: 0 auto;
-    
+    margin: 0 auto;
+  }
+  .fill{
+    background: linear-gradient(270deg, royalblue, rgb(11, 35, 107));
   }
   
   .secondBox{

@@ -2,6 +2,8 @@ const secondContainer = document.querySelector('.second-container');
 const hour = document.querySelector('.hour');
 const min = document.querySelector('.min');
 const sec = document.querySelector('.sec');
+const body = document.querySelector('body');
+const h2 = document.querySelector('h2');
 
 const box = document.querySelector('.box');
 
@@ -38,6 +40,17 @@ const changeDesign = function(){
     setInterval( manageColor, 1000)
   }
 }
+const coloredBlue = ()=>{
+  body.classList.toggle("fill");
+}
+const unColoredBlue = ()=>{
+  box.style.background ='transparent';
+}
+window.addEventListener('click', ()=>{
+  body.classList.toggle("fill") == true ? h2.innerHTML = 'Ging' : h2.innerHTML = 'Gong'
+});
+
+
 
 const manageColor = ()=>{
   secondContainer.innerHTML = '<div class="circle"></div>';
@@ -57,8 +70,9 @@ const manageColor = ()=>{
  */
 window.addEventListener('DOMContentLoaded', 
   changeDesign(),
-  box.animate(spinBox, timing)
+  box.animate(spinBox, timing),
 ) ;
+
 
 /**
  * function to get the time
@@ -83,6 +97,3 @@ setInterval(()=>{
 
 
   
-  // window.addEventListener('load', (e)=>{
-  //   box.animate(spinBox, timing)
-  // })
