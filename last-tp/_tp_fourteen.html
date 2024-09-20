@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/tp.css">
+</head>
+<body>
+
+<h2>JavaScript removeEventListener()</h2>
+
+<div id="myDIV">
+  <p>Cet élément div possède un gestionnaire d'événements onmousemove qui affiche un nombre aléatoire chaque fois que vous déplacez votre souris dans ce champ orange.</p>
+  <p>Cliquez sur le bouton pour supprimer le gestionnaire d'événements du div.</p>
+  <button onclick="removeHandler()" id="myBtn">Supprimer L'evenement</button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+  document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}
+</script>
+
+</body>
+</html>
+
+

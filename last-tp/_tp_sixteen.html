@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Ajouter un nouvel element </p>
+
+<div id="div1">
+<p id="p1">Paragraphe 1</p>
+<p id="p2">paragraphe 2</p>
+</div>
+
+<script>
+const para = document.createElement("p");
+const node = document.createTextNode("ceci est un nouvel element.");
+para.appendChild(node);
+const element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+</body>
+</html>
